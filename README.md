@@ -6,7 +6,7 @@ This project uses yolov8n.pt from ULTRALYTICS
 # Training 
 To train first prepare a dataset
 
-*Preparing Dataset*
+**Preparing Dataset**
 
 Create a '*Dataset*' folder. 
 
@@ -49,7 +49,7 @@ Then in your '*Dataset*' folder create a '*data.yaml*' file. In this file write 
 ![image](https://github.com/user-attachments/assets/dabf2830-253a-4f51-bb47-1f5e4daea8df)
 
 
-*Training your model*
+**Training your model**
 
 Next train your model on your dataset. 
 
@@ -57,18 +57,18 @@ Open Anaconda prompt and activate your environement. (instructions for environme
 
 Run the following command: 
 
-yolo task=detect mode=train epochs=80 data='Directory to your data.yaml file' model=yolov8n.pt imgsz=640 batch=8
+`yolo task=detect mode=train epochs=80 data='Directory to your data.yaml file' model=yolov8n.pt imgsz=640 batch=8`
 
 ![image](https://github.com/user-attachments/assets/6f48606d-0442-4605-a23e-415e4ec15ca9)
 
 Once training has elapsed, a '*run*' folder will be automatically created which will store data from the training
 
-1) Confusion Matrix
-2) F1 curve
-3) Labels correlogram
-4) P curve, PR curve and R curve
-5) Results xlsx file
-6) Batch pictures from the training and the validation
+1. Confusion Matrix
+2. F1 curve
+3. Labels correlogram
+4. P curve, PR curve and R curve
+5. Results xlsx file
+6. Batch pictures from the training and the validation
 
 
 ![image](https://github.com/user-attachments/assets/a6385142-0ef1-4909-8733-67ec14212aab)
@@ -76,10 +76,10 @@ Once training has elapsed, a '*run*' folder will be automatically created which 
 
 
 The confusion matrix shows an overview of the training, it shows when validated on the val dataset, how many were results were from the categories
-1) True Positive
-2) True Negative
-3) False Positive
-4) False Negative
+1. True Positive
+2. True Negative
+3. False Positive
+4. False Negative
 
 
 ![confusion_matrix](https://github.com/user-attachments/assets/37fcc242-2dc4-430d-889f-2a05fa51b392)
@@ -94,7 +94,7 @@ Typically we use the best model.
 
 For testing the model run the follwoing command in your conda environment:
 
-yolo task=detect mode=predict model='Your best model name'.pt source=0 conf=0.5 show=True
+`yolo task=detect mode=predict model='Your best model name'.pt source=0 conf=0.5 show=True`
 
 ![image](https://github.com/user-attachments/assets/c7adc472-3cc9-4264-9b17-1dbe8dbc124b)
 
