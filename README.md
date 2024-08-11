@@ -61,7 +61,7 @@ Run the following command:
 
 ![image](https://github.com/user-attachments/assets/6f48606d-0442-4605-a23e-415e4ec15ca9)
 
-Once training has elapsed, a '*run*' folder will be automatically created which will store data from the training
+Once training has elapsed, a '*run*' folder will be automatically created which will store data from the training in a '*train*' folder directory.
 
 1. Confusion Matrix
 2. F1 curve
