@@ -71,6 +71,10 @@ Once training has elapsed, a '*run*' folder will be automatically created which 
 6) Batch pictures from the training and the validation
 
 
+![image](https://github.com/user-attachments/assets/a6385142-0ef1-4909-8733-67ec14212aab)
+
+
+
 The confusion matrix shows an overview of the training, it shows when validated on the val dataset, how many were results were from the categories
 1) True Positive
 2) True Negative
