@@ -50,6 +50,7 @@ Then in your '*Dataset*' folder create a '*data.yaml*' file. In this file write 
 
 
 *Training your model*
+
 Next train your model on your dataset. 
 
 Open Anaconda prompt and activate your environement. (instructions for environment in '*REQUIREMENTS.md*' file)
@@ -57,3 +58,44 @@ Open Anaconda prompt and activate your environement. (instructions for environme
 Run the following command: 
 
 yolo task=detect mode=train epochs=80 data='Directory to your data.yaml file' model=yolov8n.pt imgsz=640 batch=8
+
+![image](https://github.com/user-attachments/assets/6f48606d-0442-4605-a23e-415e4ec15ca9)
+
+Once training has elapsed, a '*run*' folder will be automatically created which will store data from the training
+
+1) Confusion Matrix
+2) F1 curve
+3) Labels correlogram
+4) P curve, PR curve and R curve
+5) Results xlsx file
+6) Batch pictures from the training and the validation
+
+
+The confusion matrix shows an overview of the training, it shows when validated on the val dataset, how many were results were from the categories
+1) True Positive
+2) True Negative
+3) False Positive
+4) False Negative
+
+
+![confusion_matrix](https://github.com/user-attachments/assets/37fcc242-2dc4-430d-889f-2a05fa51b392)
+
+
+# Testing
+This project uses real-time testing through use of webcam. 
+
+In the '*runs*' folder, is another folder titled '*Weights*', this stores the best and last models from your training process.
+
+Typically we use the best model. 
+
+For testing the model run the follwoing command in your conda environment:
+
+yolo task=detect mode=predict model='Your best model name'.pt source=0 conf=0.5 show=True
+
+![image](https://github.com/user-attachments/assets/c7adc472-3cc9-4264-9b17-1dbe8dbc124b)
+
+
+![image](https://github.com/user-attachments/assets/8c8dfc85-b690-464f-8b02-03f8661a9f2b)
+
+
+The model will detect the object and also display a confidence value.
