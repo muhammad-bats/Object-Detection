@@ -3,7 +3,7 @@ Object Detection using YOLOv8
 
 This project uses yolov8n.pt from ULTRALYTICS 
 
-# Training 
+## Training 
 To train first prepare a dataset
 
 **Preparing Dataset**
@@ -85,7 +85,7 @@ The confusion matrix shows an overview of the training, it shows when validated 
 ![confusion_matrix](https://github.com/user-attachments/assets/37fcc242-2dc4-430d-889f-2a05fa51b392)
 
 
-# Testing
+## Testing
 This project uses real-time testing through use of webcam. 
 
 In the '*runs*' folder, is another folder titled '*Weights*', this stores the best and last models from your training process.
