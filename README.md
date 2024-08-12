@@ -3,6 +3,23 @@ Object Detection using YOLOv8
 
 This project uses yolov8n.pt from ULTRALYTICS 
 
+## Pre-Requisites
+
+This script uses a conda environment to run the tracker.
+
+conda version: 24.7.1
+
+To create a conda environment run the following command in anaconda prompt
+
+`conda create --name yolov8`
+
+You will also need to install: 
+
+ultralytics `pip install ultralytics`
+
+labelimg `pip install labelimg`
+
+yolov8n.pt 
 ## Training 
 To train first prepare a dataset
 
