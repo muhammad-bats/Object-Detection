@@ -120,3 +120,8 @@ For testing the model run the follwoing command in your conda environment:
 
 
 The model will detect the object and also display a confidence value.
+
+## Notes
+- A python file is added just incase you wish to run this using a python script instead of CLI
+- for the python file, your *pre-requisites* will stay the same with the addition of:
+  >python version: 3.10.14
